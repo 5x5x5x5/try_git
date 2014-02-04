@@ -1,0 +1,323 @@
+## Code Schhol's javascript1
+
+> var trainWhistles = 3
+
+> trainwhistles = 9
+
+> trainWhistles = trainWhistles + 9
+
+> trainWhistles += 3
+
+> trainWhistles *= 3
+
+> "All of our rtains have " + trainWhistles + " whistles!"
+
+> "But the Pollack 9000 has " + (trainWhistles * 3) + "!"
+
+> var pollack9000 = trainWhistles * 3
+
+> "But the Pollack 9000 has " + pollack9000 + "!"
+
+> trainWhistles++ or trainWhistles--
+
+> var sentence = "Antidisestablishmentarianism is fun to say!"
+
+> sentence.length(8)
+s
+
+<script src="trains.js"></script>
+
+<script src="../scripts/trains.js"></script>
+
+;
+
+var totalTrains = 12;
+var trainsOperational = 8;
+console.log("There are " + \(totalTrains - trainsOperational\) + " broke ass trains!");
+
+## Loops
+
+while(*some expression is true*){
+    *do this code*
+}
+
+var number = 1;
+while (number <= 5) {
+    console.log(number);
+    number++;
+}
+
+var trainNumber = 1;
+while(trainNumber <= 8){
+    console.log("Train # " + trainNumber + " is running.");
+    trainNumber++;
+}
+
+var trainsOperational = 8;
+var trainNumber = 1;
+while( trainNumber <= trainsOperational ){
+    console.log("Train # " + trainNumber + " is running.");
+    trainNumber++;
+}
+
+For (initialize; conditional test; increment/decrement){
+    Statements to execute;
+}
+
+for(var number = 5; number > 0; number--) {
+    console.log(number);
+}
+
+## Conditionals
+
+var value1 = 4;
+var value2 = 9;
+if ( value1 < value2 ) {
+    console.log(value1 + " is less than " + value2);
+} else {
+    console.log(value1 + " is greater than or equal to " + value2);
+}
+
+
+var num = 10;
+while(num>0){
+  if ( num % 2 == 0){
+    console.log(num);
+  }
+  num--;
+}
+
+
+for (trainNumber = 1; trainCount <= totalTrains; trainCount++) {
+  if (trainNumber <= operationalTrains) {
+      console.log("Train #" + trainNumber + " is running.");
+  } else if (trainNumber == 10) {
+      console.log("Train #10 begins running at noon.");
+  } else {
+      console.log("Train #" + trainNumber + " is not operational.");
+  }
+}
+
+## Nested Conditionals
+
+var totaTrains = 12;
+var trainsOperational = 8;
+
+if (trainsOperational > 0) {
+  if (trainsOperational == totalTrains) {
+      consol.log("All trains are running at the JavaScript Express!");
+    } else {
+      for (var trainNumber = 1; trainNumber <= totalTrains; trainNumber++) {
+        ...
+      }
+    }
+} else {
+    console.log("No trains are operational today. Bummer!");
+}
+
+### Pop-Up Windows
+
+var gotNmae = false;
+while(gotName == false){
+  var userName = prompt("Yo passenger! What's your name?");
+  if ( confirm("Are you sure your name is " + userName + "?") ){
+    alert("'Sup " + userName + "!");
+    gotNmae = true;
+  }
+}
+
+### Functions
+
+function sumOfCubes (parametera, paramaterb) {
+  *do some stuff*
+  return *something(or nothing) from the numbers
+}
+
+
+function countE ( ) {
+	 var phrase = prompt("Which phrase would you like to examine?");
+	 if ( typeof(phrase) != "string" ) {
+	    alert("That's not a valid entry!");
+	    return false;
+	 } else {
+	     var eCount = 0;
+	     for (var index = 0; index < phrase.length; index++) {
+	     	 if(phrase.charAt(index) == 'e' || phrase.charAt(index) == 'E')
+		 	eCount++;
+        	}
+	     }
+	     alert("There are " + eCount + " E's in \"" + phrase + "\".");
+  	}
+}
+     
+
+### Arrays
+
+var passengers = [ "Gregg Pollack", "Aimee Simone", "Thomas Meeks", "Oliver Lacan", "Jon Friskics", "Ashley Smith"];
+
+passengers[5];
+-> Ashley Smith
+
+passengers[2] = "Eric Allam"; 
+
+passengers.pop():
+passengers.push("Yo Mama");
+
+var comboArray1 = ["one", "fish", "two", "fish"];
+var comboArray2 = ["Red", "fish", "Blue", "fish"];
+var arrayOfArrays = [comboArray1, comboArray2];
+
+console.log( arrayOfArrays[1][2] );
+returns -> Blue 
+
+## Using Loops with Arrays
+
+var numberList = [ 2, 5, 8, 4, 7,12, 6, 9, 3,11 ];
+
+for (int i = 0; i < numberList.length; i++) {
+    console.log("Thevalue in cell " + i + " is " + numberList[i]);
+}
+
+
+passengers[5] = undefined
+
+
+var numberList = [ 2,5,8,4,7,12,6,9,3,11];
+
+var evenCount = 0;
+for (int i = 0; i < numberList.length; i++) {
+    if (numberList[i] % 2 == 0) {
+           evenCount++;
+	} else {
+	        numberList[i] = undefined;
+	}
+}
+console.log(even.count);
+
+
+function addPassenger ( name, list) {
+	 if (list.length == 0) {
+	     list.push(name);
+	 } else {
+	      for (var i = 0; i <list.length; i++) {
+	      	  if(list[i] == undefined){
+		  	     list[i] = name;
+			     return list;
+		  } else if (i == list.length - 1) {
+		             list.push(name);
+		  }
+		}
+	  }
+	  return list;
+}
+
+### Functional expressions
+
+var greeting;
+...some code that sets newCustomer to true or false...
+if( newCustomer ){
+    greeting = function () {
+        alert("Thanks for visiting the Badlands!\n" +
+	    "We hope your stay is...better than most.");
+    };
+} else {
+    greeting = function () {
+        alert("Welcome back to the Badlands!\n" +
+	      " Guess they aren't so bad huh?");
+    };
+}
+closeTerminal( greeting );
+function closeTerminal( message ){
+    ....
+    message();
+    ....
+}
+
+#####
+
+var sweetAnnouncement = function () { alert("ATTENTION!\n CUPCAKES.\n\n...THAT IS ALL.") };
+
+var fruits = [ "Apple", "Orange", "Pineapple", "Cranberry", "Pomegranate" ];
+var fruitJuice = fruits.map( function (fruits) { return "\n" + fruit + "juice"; } );
+alert(fruitJuice);
+
+#### Simple ticket system using functional expressions
+
+var parkRides = [ ["Birch Bumpers", 40] , ["Pines Plunge", 55] , ["Cedar Coaster", 20] , ["Ferris Wheel of Firs", 90] ];
+
+var fastPassQueue = ["Cedar Coaster",  "Pines Plunge", "Birch Bumpers", "Pines Plunge" ];
+
+function buildTicket ( allRides, passRides, pick ) {
+  if(passRides[0] == pick){
+    var pass = fastAvail.shift();
+    return function ( ) { alert("Quick! You've got a Fast Pass to " + pass + "!");
+        };
+  } else {
+    for(var i = 0; i<allRides.length; i++){
+      if(allRides[i][0] == pick){
+        return function () { alert("A ticket is printing for " + pick + "!\n" +                     "Your wait time is about " + allRides[i][1] + "minutes.");
+        };
+      }
+    }
+  }
+}
+ 
+### Closure = returning a function from a function, complete with variables from an external scope.
+
+function testClosure (){
+      var x = 4;
+      function closeX (){
+            return x;
+      }
+      return closeX;
+}
+
+#Check out what is returned
+var checkLocalX = testClosure();
+checkLocalX(); ## -> 4 is returned. totally out of scope
+
+## Loops with closures: a cautionary tale
+
+function assignTorpedo ( name, passengerArray ){
+      for (var i = 0; i<passengerArray.length; i++) {
+         if (passengerArray[i] == name) {
+            return function () {  ## Here's where we return the function to global, locking i in place. Immediate return has the expected effect because i is not allowed to progress.
+            alert("Ahoy, " + name + "!\n" + "Man your post at Torpedo #" + (i+1) + "!");
+            };
+         }
+      }
+}
+
+# Trying it out
+var subPassengers = ["Luke", "Leia", "Han", "Chewie", "Yoda", "R2-D2", "C3-PO"];
+var giveAssignment = assignTorpedo("Chewie", subPassengers);
+
+
+### Better way
+
+function makeTorpedoAssigner ( passengeArray ) {
+      return function ( name ) {
+         for (var i = 0; i<passengerArray.length; i++) {
+            if (passengerArray[i] == name) {
+               alert("Ahoy, " + name + "!\n" + "Man your post at Torpedo #" + (i+1) + "!");
+            }
+         }
+       };
+}
+
+var getTorpedoFor = makeTorpedoAssigner(subPassengers);
+getTorpedoFor("Chewie");
+
+### Load Order - Hoisting
+# Ways to avoid pitfalls
+# - variable declarations before conditional calls
+# - make functional expressions explicit functions
+
+## Javascript data structures
+
+var myBox { } ; ## creates an empty object ## Object literal
+
+# An object is like an Array whose indices can be accessed with strings instead of numbers.
+
+ 
+ 

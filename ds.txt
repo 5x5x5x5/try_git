@@ -1,0 +1,196 @@
+**Fundamentals
+*Matrices & Linear Algebra Fundamentals
+*Hash Functions, Binary Tree, O(n)
+*Relational Algebra, DB Basics
+*Inner, Outer, Cross, Theta Join
+*CAP Theorem
+*Tabular Data
+*Entropy
+*Data Frames & Series
+*Sharding
+*OLAP
+*Multidimensional Data Model
+*ETL
+*Reporting vs BI vs Analytics
+*JSON & XML
+*NoSQL
+*Regex
+*Vendor Landscape
+*Env Setup
+**Statistics
+*Pick a Dataset (UCI Repo)
+*Descriptive Statistics (mean, median, range, SD, Var)
+*Exploratory Data Analysis
+*Histograms
+*Percentiles & Outliers
+*Probability Theory
+*Bayes Theorem
+*Random Variables
+*Cumulative Distribution Function (CDF)
+*Continuous Distributions (Normal,Poisson,Gaussian)
+*Skewness
+*ANOVA
+*Probability Density Functioun (PDF)
+*Central Limit Theorem
+*Monte Carlo Method
+*Hypothesis Testing
+*p-Value
+*Chi^2 Test
+*Estimation
+*Confidence Interval (CI)
+*MLE
+*Kernel Density Estimate
+*Regression
+*Covariance
+*Correlation
+*Pearson Coefficient
+*Causation
+*Least Squares Fit
+*Euclidean Distance
+**Programming
+*Python Basics
+*Working in Excel
+*R Setup, R Studio
+*R Basics
+*Expressions
+-*IBM SPSS
+-*Rapid Miner
+*Variables
+*Vectors
+*Matrices
+*Arrays
+*Factors
+*Lists
+*Data Frames
+*Reading CSV Data
+*Reading Raw Data
+*Subsetting Data
+*Manipulating Data Frames
+*Functions
+*Factor Analysis
+*Install Pkgs
+**Machine Learning
+*What is ML?
+*Numerical Variables
+*Categorical Variables
+*Supervised Learning
+*Unsupervised Learning
+*Concepts,Inputs & Attributes
+*Training & Test Data (cross-validation)
+*Classifier
+*Prediction
+*Lift
+*Overfitting
+*Bias & Variance
+*Trees & Classification
+***Classification
+*Classification Rate
+*Decision Trees
+*Boosting
+*Naive Bayes Classifiers
+*K-Nearest Neighbor
+*Logistic Regression
+***Regression
+*Ranking
+*Linear Regression
+*Perceptron
+***Clustering
+*Hierarchical Clustering
+*K-means Clustering
+***
+*Neural Networks
+*Sentiment Analysis
+*Collaborative Filtering
+*Tagging
+**Visualization
+*Data Exploration in R (Hist, Boxplot etc)
+*Uni, Bi & Multivariate Viz
+*ggplot2
+*Histogram & Pie (Uni)
+*Tree & Tree Map
+*Scatter Plot (Bi)
+*Line Charts (Bi)
+*Spatial Charts
+*Survey Plot
+*Timeline
+*Decision Tree
+*D3.js
+*InfoVis
+*IBM ManyEyes
+*Tableau
+**Text Mining / NLP
+*Corpus
+*Named Entity Recognition
+*Text Analysis
+*UIMA
+*Term Document Matrix
+*Term Frequency & Weight
+*Support Vector Machines
+*Association Rules
+*Market Based Research
+*Feature Extraction
+*Using Mahout
+*Using Weka
+*Using NLTK
+*Classify Text
+*Vocabulary Mapping
+**Big Data
+*Map Reduce Fundamentals
+*Hadoop Components
+*HDFS
+*Data Replication Principles
+*Setup Hadoop (IBM/Cloudera/HortonWorks)
+*Name & Data Nodes
+*Job & Task Tracker
+*M/R Programming
+*Sqoop: Loading Data in HDFS
+*Flume, Scribe: For Unstruct Data
+*SQL with Pig
+*DWH with Hive
+*Scribe, Chukwa For Weblog
+*Using Mahout
+*Zookeeper Avro
+*Storm: Hadoop Realtime
+*Rhadoop, RHIPE
+*rmr
+*Cassandra
+*MongDB, Neo4j
+**Data Munging
+*Dimensionality & Numerosity Reduction
+*Normalization
+*Data Scrubbing
+*Handling Missing Values
+*Unbiased Estimators
+*Binning Sparse Values
+*Feature Extraction
+*Denoising
+*Sampling
+*Stratified Sampling
+*Pricipal Component Analysis*
+ransformation & Enrichment
+**Data Ingestion
+*Summary of Data Formats
+*Data Discovery
+*Data Sources & Aquisition
+*Data Integration
+*Data Fusion
+*Transformation & Enrichment
+*Data Survey
+*Google OpenRefine
+*How much Data?
+*Using ETL
+**Toolbox
+*MS Excel w/ Analysis ToolPak
+*Java, Python
+*R, R-Studio, Rattle
+*Weka, Knime, RapidMiner
+*Hadoop Dist of Choice
+*Spark, Storm
+*Flume, Scibe, Chukwa
+*Nutch, Talend, Scraperwiki
+*Webscraper, Flume, Sqoop
+*tm, RWeka, NLTK
+*RHIPE
+*D3.js, gglpot2, Shiny
+*IBM Languageware
+*Cassandra, MongoDB
