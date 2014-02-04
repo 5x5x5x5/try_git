@@ -1,0 +1,112 @@
+## Try Git CodeSChool class
+# their octobox directory now has an empty /.git/ repository
+
+# First commands
+
+> git init
+
+> git status
+
+> git add <file.txt>
+
+## Definitions
+Staging area :
+A place where we can group files together before we "commit" them to Git.
+
+Commit:
+A snapshot of our repository. This was if we ever need to look back at the changes we've made (or if someone else does), we will see a nice timeline of all changes.
+
+> git commit -m "Add cute octocat story"
+
+Also works with wildcards
+
+> git add '*.txt'
+
+> git commit -m 'Add all the octocat txt files'
+
+> git log
+
+> git remote add origin https://github.com/try-git/try_git.git
+
+> git push -u origin master
+
+## A cat says that when you start getting the hang of git you can do cool stuff with 'hooks' when you push.
+##Por ejemplo, you can upload directly to a webserver you push to your master remote instead of having to upload your site with an ftp client.
+
+## Some time has now passed. Others have joined our github project, pulled our changes and added their own commits. And have even pushed them. Let us check for changes.
+
+> git pull origin master
+
+## Look at the changes
+
+> git diff HEAD
+
+HEAD:
+The HEAD is a pointer that holds your position within all your different commits. By default HEAD points to your most recent commit, so it can be used as a quick way to reference that commit without having to look up the SHA.
+
+Commit etiquette:
+You want to try to keep related changes together in seperate commits. Using 'git dff' gives you a good overview of changes you have made and lets you add files or directories one at a time and commit them seperately.
+
+> git add octofamily/octodog.txt
+
+> git diff --staged
+
+## Now take it all away.
+
+> git reset octofamily/octodog.txt
+
+--:
+ So you may be wondering why do I have to use this '--' thing? 'git checkout' seems to work fine without it. It's simply promising the command line that there are no more options after the '--'. This way if you happen to have a branch named 'octocat.txt', it will still revert the file, instead of switching to the branch of the same name.
+
+> git checkout -- octocat.txt
+
+Branching:
+Branches are what naturally happens when you want to work on multiple features at the same time. You wouldn't want to end up with a master branch which has Feature A half done and Feature B half done.
+	 Rather you's separate the code base into two "snapshots" (branches) and work on and commit to them separately. As soon as one was ready, you might merge this branch back into the master branch and push it to the remote server.
+
+> git branch clean_up
+
+> git checkout clean_up
+
+All at Once:
+git checkout -b new_branch
+to checkout and create a branch at the same time. This is the same as doing
+git branch new_branch
+git checkout new_branch
+
+> git rm '*.txt'
+
+## Now remove all the things. Instructions for removing a folder too
+git rm -r folder_of_cats
+This will recursively remove all folders and files from the given directory. 
+
+> git commit -m "Remove all the cats"
+
+The '-a' option:
+    f you happen to delete a file without using 'git rm' you'll still have to 'git rm' the deleted files from the working tree. You can save this step by using the '-a' option on 'git commit', which auto removes deleted files with the commit.
+> git commit -am "Delete stuff"
+
+## Switching back to master. Switch back to master so you can copy (merge) your changes from clean_up branch back into the master branch.
+
+> git checkout master
+
+Pull requests:
+If you're hosting your repo on GitHub, you can do something called a pull request.
+A pull request allows the boss of the project to look through your changes and make comments before deciding to merge in the chang. It's a really great feature that is used all the time (except by Linus Torvalds) for remote workers and open-source projects.
+
+Anyway
+> git merge clean_up
+
+Now delete the clean_up branch
+
+> git branch -d clean_up
+
+Force delete:
+      What if you have been working on a feature branch and you decide you really don't want this feature anymore? You might decide to delete the branch since you're scrapping the idea. You'll notice that 'git branch -d bad_feature' doesn't work. This is because '-d' won't let you delete something that hasn't been merged.
+      You can either add the '--force (-d)' option or use '-D' which combines '-d -f' together into one command.
+
+It ain't over till the fat lady pushes
+
+> git push
+
+### All done with Try Git
