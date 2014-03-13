@@ -1,0 +1,16 @@
+#Basics
+Vector notation
+Unit Basis Vectors
+#Simple Vector Operations
+Equality (=) and Assignment (:=)
+Vector Addition (add)
+Scaling (scal)
+Vector Subtraction
+#Advanced Vector Operations
+Scaled Vector Addition (axpy)
+Linear Combination of Vectors
+Dot Product (dot)
+Vector Length (norm2)
+Vector Functions
+Vector Functions That Map Vectors to Vectors
+#Laff Package Development: Vectors

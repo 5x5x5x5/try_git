@@ -1,0 +1,47 @@
+### Codeschools Git reOAal class commands
+
+> git help config
+
+> git config --global --add user.name danny
+
+> git init
+
+> git status
+
+> git add index.html
+
+> git commit -m 'first one'
+
+> git add 'css/'
+
+> git log
+
+### End level 1
+
+git reset --soft HEAD^ # Undo last commit, put changes into staging
+git commit --amend -m "New Message" #change last commit
+git reset --hard HEAD^ # Undo last commit and all changes
+git reset --hard HEAD^^  #Undo last 2 commits
+
+git remote add origin https://...
+git remote -v
+git push -u origin master #origin is repo, master is branch 
+git remote add <name> <address>
+git remote rm <name>
+git push -u <name> <branch>
+git push heroku master
+
+
+> git log
+> git add ostrich.html
+> git diff HEAD
+> git reset ostrich.html
+> git commit -a -m "Skipping steps"
+> git add cats.html
+> git commit --amend -m "resubmitting last commit with cats attached"
+> git commit --soft HEAD^
+> git checkout -- index.html cats.html
+> git commit -a -m index.html " message here"
+> git reset --hard HEAD^
+> git remote add origin git@example.com:example/petshop.git
+> git push -u origin master

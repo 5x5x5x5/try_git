@@ -1,0 +1,11 @@
+CHANGES.txt
+MANIFEST.in
+setup.cfg
+howdoi/__init__.py
+howdoi/howdoi.py
+pip-egg-info/howdoi.egg-info/PKG-INFO
+pip-egg-info/howdoi.egg-info/SOURCES.txt
+pip-egg-info/howdoi.egg-info/dependency_links.txt
+pip-egg-info/howdoi.egg-info/entry_points.txt
+pip-egg-info/howdoi.egg-info/requires.txt
+pip-egg-info/howdoi.egg-info/top_level.txt
